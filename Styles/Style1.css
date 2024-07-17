@@ -1,0 +1,120 @@
+/* CSS برای فرم گرویتی فرم */
+
+/* تنظیمات عمومی فرم */
+body .gform_wrapper {
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 20px;
+    background: rgba(249, 249, 249, 0.9); /* پس‌زمینه با شفافیت */
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+body .gform_wrapper h3.gform_title {
+    font-size: 24px;
+    text-align: center;
+    color: #12614D !important; /* رنگ عنوان */
+    margin-bottom: 20px;
+}
+
+body .gform_wrapper .gfield_label {
+    font-size: 16px;
+    color: #12614D !important; /* رنگ برچسب‌ها */
+    margin-bottom: 5px;
+}
+
+/* تنظیمات فیلدهای ورودی */
+body .gform_wrapper input[type="text"],
+body .gform_wrapper input[type="email"],
+body .gform_wrapper input[type="url"],
+body .gform_wrapper input[type="tel"],
+body .gform_wrapper input[type="number"],
+body .gform_wrapper textarea,
+body .gform_wrapper select {
+    width: 100%;
+    /*padding: 10px;*/
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    color: #12614D; /* رنگ متن داخل فیلدها */
+}
+
+/* تنظیمات فیلد تاریخ تولد */
+body .gform_wrapper .gfield_date_month,
+body .gform_wrapper .gfield_date_day,
+body .gform_wrapper .gfield_date_year {
+    width: 30% !important;
+    display: inline-block;
+    margin-right: 5px;
+}
+
+body .gform_wrapper .gfield_date_month select,
+body .gform_wrapper .gfield_date_day select,
+body .gform_wrapper .gfield_date_year select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    color: #12614D; /* رنگ متن داخل فیلدها */
+}
+
+/* تنظیمات دکمه ارسال */
+body .gform_wrapper input[type="submit"] {
+    background: #12614D !important; /* رنگ دکمه ارسال */
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background 0.3s;
+}
+
+body .gform_wrapper input[type="submit"]:hover {
+    background: #0f4a39; /* رنگ دکمه ارسال در حالت هاور */
+}
+
+/* تنظیمات موبایل */
+@media (max-width: 768px) {
+    body .gform_wrapper {
+        padding: 10px;
+    }
+
+    body .gform_wrapper h3.gform_title {
+        font-size: 20px;
+    }
+
+    body .gform_wrapper .gfield_label {
+        font-size: 14px;
+    }
+
+    body .gform_wrapper .gfield_date_month,
+    body .gform_wrapper .gfield_date_day,
+    body .gform_wrapper .gfield_date_year {
+        width: 100% !important;
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    body .gform_wrapper h3.gform_title {
+        font-size: 18px;
+    }
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+body .gform_wrapper h3.gform_title,
+body .gform_wrapper .gfield_label,
+body .gform_wrapper input,
+body .gform_wrapper textarea,
+body .gform_wrapper select,
+body .gform_wrapper input[type="submit"] {
+    font-family: 'Roboto', sans-serif;
+}
