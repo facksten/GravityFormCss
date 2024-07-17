@@ -1,0 +1,20 @@
+@font-face {
+    font-family: 'MyCustomFont';
+    src: url('URL_TO_YOUR_FONT_FILE.woff2') format('woff2'),
+    url('URL_TO_YOUR_FONT_FILE.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    font-family: 'MyCustomFont', sans-serif;
+}
+
+body .gform_wrapper h3.gform_title,
+body .gform_wrapper .gfield_label,
+body .gform_wrapper input,
+body .gform_wrapper textarea,
+body .gform_wrapper select,
+body .gform_wrapper input[type="submit"] {
+    font-family: 'MyCustomFont', sans-serif;
+}
