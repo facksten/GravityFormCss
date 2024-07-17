@@ -1,0 +1,77 @@
+/* CSS برای فرم گرویتی فرم */
+
+/* تنظیمات عمومی فرم */
+body .gform_wrapper {
+    max-width: 
+    800px;
+    margin: 0 auto;
+    padding: 20px;
+    background: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+body .gform_wrapper h3.gform_title {
+    font-size: 24px;
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+body .gform_wrapper .gfield_label {
+    font-size: 16px;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+/* تنظیمات فیلدهای ورودی */
+body .gform_wrapper input[type="text"],
+body .gform_wrapper input[type="email"],
+body .gform_wrapper input[type="url"],
+body .gform_wrapper input[type="tel"],
+body .gform_wrapper input[type="number"],
+body .gform_wrapper textarea,
+body .gform_wrapper select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+body .gform_wrapper input[type="submit"] {
+    background: #0073e6;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background 0.3s;
+}
+
+body .gform_wrapper input[type="submit"]:hover {
+    background: #005bb5;
+}
+
+/* تنظیمات موبایل */
+@media (max-width: 768px) {
+    body .gform_wrapper {
+        padding: 10px;
+    }
+
+    body .gform_wrapper h3.gform_title {
+        font-size: 20px;
+    }
+
+    body .gform_wrapper .gfield_label {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 480px) {
+    body .gform_wrapper h3.gform_title {
+        font-size: 18px;
+    }
+}
